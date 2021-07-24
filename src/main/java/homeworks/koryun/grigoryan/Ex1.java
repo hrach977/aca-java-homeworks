@@ -8,6 +8,6 @@ public class Ex1 {
         System.out.println("Enter another number");
         double secondNumber = input.nextDouble();
         double product = firstNumber*secondNumber;
-        System.out.println("The product of the entered numbers is "+product);
+        System.out.println(firstNumber+" * "+secondNumber+" = "+product);
     }
 }
