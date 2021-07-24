@@ -6,6 +6,6 @@ public class Ex6 {
         System.out.println("Enter the size in inches.");
         double inches = input.nextDouble();
         double meters = inches * 0.0254;
-        System.out.println(inches+" Inches is meters "+meters);
+        System.out.println(inches+" Inches is"+ meters +" meters");
     }
 }
