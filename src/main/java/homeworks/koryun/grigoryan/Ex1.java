@@ -4,10 +4,10 @@ public class Ex1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number");
-        int firstNumber = input.nextInt();
+        double firstNumber = input.nextDouble();
         System.out.println("Enter another number");
-        int secondNumber = input.nextInt();
-        int product = firstNumber*secondNumber;
+        double secondNumber = input.nextDouble();
+        double product = firstNumber*secondNumber;
         System.out.println("The product of the entered numbers is "+product);
     }
 }
