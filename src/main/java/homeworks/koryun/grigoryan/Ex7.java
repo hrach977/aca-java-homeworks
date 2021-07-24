@@ -1,0 +1,17 @@
+package homeworks.koryun.grigoryan;
+import java.util.Scanner;
+public class Ex7 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double sum=0;
+        double average=0;
+        int count=0;
+        while(input.hasNext()){
+            System.out.println("Enter a number");
+            sum += input.nextDouble();
+            count++;
+        }
+        System.out.println("Sum is: "+sum);
+        System.out.println("Average is: "+average);
+    }
+}
