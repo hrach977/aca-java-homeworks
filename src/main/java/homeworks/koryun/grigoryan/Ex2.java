@@ -8,7 +8,7 @@ public class Ex2 {
         System.out.println("Enter another number");
         int secondNumber = input.nextInt();
         int int_division = firstNumber/secondNumber;
-        float float_division =((float) firstNumber)/ ((float)(secondNumber));
+        float float_division =((float) firstNumber) / ((float)(secondNumber));
         System.out.println(int_division);
         System.out.println(float_division);
     }
