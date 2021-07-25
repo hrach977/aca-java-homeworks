@@ -1,4 +1,4 @@
-package robert.mkhitaryan;
+package homeworks.robert.mkhitaryan;
 
 import java.util.Scanner;
 
