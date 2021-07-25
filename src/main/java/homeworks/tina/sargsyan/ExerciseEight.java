@@ -5,7 +5,6 @@ Take two numbers from input.
 Swap them and print out.
  */
 
-
 public class ExerciseEight {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
