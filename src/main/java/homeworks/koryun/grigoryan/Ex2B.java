@@ -9,5 +9,6 @@ public class Ex2B {
         int secondNumber = input.nextInt();
         float float_division =((float) firstNumber) / ((float)(secondNumber));
         System.out.println(firstNumber +" / "+secondNumber+" = "+float_division);
+
     }
 }
