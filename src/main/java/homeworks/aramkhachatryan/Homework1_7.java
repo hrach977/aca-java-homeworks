@@ -23,6 +23,6 @@ public class Homework1_7 {
         float sumF = numberA + numberB + numberC + numberD + numberE;
         float average = sumF / 5;
         System.out.println("Sum is: " + sum);
-        System.out.println("Sum is: " + average);
+        System.out.println("Average is: " + average);
     }
 }
