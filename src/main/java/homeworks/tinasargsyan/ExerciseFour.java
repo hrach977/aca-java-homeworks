@@ -1,4 +1,4 @@
-package homeworks.tina.sargsyan;
+package homeworks.tinasargsyan;
 import java.util.Scanner;
 /*
 Take a number from input, which will represent the side of a square.

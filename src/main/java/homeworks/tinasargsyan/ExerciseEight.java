@@ -1,4 +1,4 @@
-package homeworks.tina.sargsyan;
+package homeworks.tinasargsyan;
 import java.util.Scanner;
 /*
 Take two numbers from input.

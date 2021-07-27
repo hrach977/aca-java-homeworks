@@ -1,4 +1,4 @@
-package homeworks.tina.sargsyan;
+package homeworks.tinasargsyan;
 import java.util.Scanner;
 /*
 Take 5 numbers from input.
