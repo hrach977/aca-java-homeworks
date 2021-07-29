@@ -7,7 +7,6 @@ public class Exercise1 {
     public static void main(String[]args) {
             Scanner num = new Scanner(System.in);
             int first, second, result;
-            System.out.println("Exercise1");
             System.out.println("Enter first num");
             first = num.nextInt();
             System.out.println("Enter second num");
