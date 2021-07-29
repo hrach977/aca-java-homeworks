@@ -8,15 +8,8 @@ public class Test {
         int a = input.nextInt();
         int b = input.nextInt();
         int c = input.nextInt();
+        int d = input.nextInt();
 
-        int max = a;
-
-        if(max < b){
-            max = b;
-            if(max < c){
-                max = c;
-            }
-        }
-        System.out.println(max);
+        System.out.println("The greatest number is: " + Math.max(Math.max(a,b), Math.max(c,d)));
     }
 }
