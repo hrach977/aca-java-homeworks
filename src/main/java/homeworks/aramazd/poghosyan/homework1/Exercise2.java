@@ -1,4 +1,4 @@
-package homeworks.aramazd.poghosyan;
+package homeworks.aramazd.poghosyan.homework1;
 
 /*
 *   Take 2 numbers from input.
