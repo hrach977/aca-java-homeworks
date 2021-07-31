@@ -25,7 +25,7 @@ public class Exercise10 {
                 System.out.println(31);
             } else {
                 System.out.println(30);
-            }else
+            }
         }
 
     }
