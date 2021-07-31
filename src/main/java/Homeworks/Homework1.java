@@ -84,7 +84,7 @@ public class Homework1 {
 //Take two floating point numbers from input. Check whether they are the same up to three decimal places
 
 
-        /*Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("PLease input a character");
         String str = input.nextLine();
         if (str.length() > 1) {
@@ -98,6 +98,6 @@ public class Homework1 {
             } else {
                 System.out.println("Error, Not a Letter");
             }
-        }*/
+        }
     }
 }
