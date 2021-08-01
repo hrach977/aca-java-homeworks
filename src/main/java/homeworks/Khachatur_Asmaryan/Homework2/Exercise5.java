@@ -2,7 +2,7 @@ package homeworks.Khachatur_Asmaryan.Homework2;
 
 import java.util.Scanner;
 
-public class Exercise4 {
+public class Exercise5 {
     public static void main(String[] args) {
         int year;
         boolean leap;
