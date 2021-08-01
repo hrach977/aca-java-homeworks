@@ -7,7 +7,7 @@ public class Exercise5 {
         int year;
         boolean leap;
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter year ");
+        System.out.println("Please enter the year ");
         year = input.nextInt();
         if ( year % 4 == 0) {
             leap = true;
