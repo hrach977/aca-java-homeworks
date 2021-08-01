@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan;
+package homeworks.tinasargsyan.firstexercises;
 import java.util.Scanner;
 //Take a number from input. Print its multiplication table up to 10
 

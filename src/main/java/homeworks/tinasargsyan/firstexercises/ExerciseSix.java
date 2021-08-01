@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan;
+package homeworks.tinasargsyan.firstexercises;
 import java.util.Scanner;
 /*
 Take a number in inches from input.

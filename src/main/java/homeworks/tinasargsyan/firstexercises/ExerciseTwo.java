@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan;
+package homeworks.tinasargsyan.firstexercises;
 /*
 Take 2 numbers from input. Print the result of their division.
 a) The input contains integers
