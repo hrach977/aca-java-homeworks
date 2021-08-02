@@ -31,6 +31,7 @@ public class SecondExercise {
                 break;
             default:
                 System.out.println("Invalid day range");
+                break;
         }
     }
 }
