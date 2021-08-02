@@ -1,6 +1,8 @@
+package aramkhachatryan;
+
 import java.util.Scanner;
 
-public class Homework1_3 {
+public class HomeworkA3a {
     public static void main(String[] args) {
         int number;
         int x = 1;

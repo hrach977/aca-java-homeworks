@@ -1,6 +1,8 @@
+package aramkhachatryan;
+
 import java.util.Scanner;
 
-public class Homework1_3Alt {
+public class HomeworkA3b {
     public static void main(String[] args) {
         int number;
         System.out.print("Please enter an integer number: ");

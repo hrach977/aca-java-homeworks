@@ -1,6 +1,8 @@
+package aramkhachatryan;
+
 import java.util.Scanner;
 
-public class Homework1_6 {
+public class HomeworkA6 {
     public static void main(String[] args) {
         float numberI;
         System.out.print("Please enter a number in inches: ");

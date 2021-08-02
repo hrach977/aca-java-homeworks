@@ -1,6 +1,8 @@
+package aramkhachatryan;
+
 import java.util.Scanner;
 
-public class Homework1_5 {
+public class HomeworkA5 {
     public static void main(String[] args) {
         float numberF;
         System.out.print("Please enter the temperature in Fahrenheit scale: ");
