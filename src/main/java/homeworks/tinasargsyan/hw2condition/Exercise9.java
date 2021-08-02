@@ -11,10 +11,10 @@ public class Exercise9 {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the first value");
-        boolean monkey1 = sc.nextBoolean();
+        boolean smile1 = sc.nextBoolean();
         System.out.println("Enter the second value");
-        boolean monkey2 = sc.nextBoolean();
-        if(monkey1==monkey2){
+        boolean smile2 = sc.nextBoolean();
+        if((smile1 && smile2) || (!smile1 && !smile2)){
             System.out.println("true");
         }else
             System.out.println("false");
