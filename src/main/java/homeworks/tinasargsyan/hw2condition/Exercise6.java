@@ -1,9 +1,9 @@
-package homeworks.tinasargsyan.condition;
+package homeworks.tinasargsyan.hw2condition;
 //Take two integers from input between 25 and 75.
 //Output true if there’s a common digit in both numbers.
 import java.util.Scanner;
 
-public class SixthExercise {
+public class Exercise6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the first number from 25 to 75");

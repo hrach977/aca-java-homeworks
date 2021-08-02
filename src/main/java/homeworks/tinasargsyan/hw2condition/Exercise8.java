@@ -1,11 +1,11 @@
-package homeworks.tinasargsyan.condition;
+package homeworks.tinasargsyan.hw2condition;
 /*
 Take two integers from input.
 Output true if either of them is in the range 10..20 inclusive.
  */
 import java.util.Scanner;
 
-public class EighthExercise {
+public class Exercise8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the first number");

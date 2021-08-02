@@ -1,8 +1,8 @@
-package homeworks.tinasargsyan.condition;
+package homeworks.tinasargsyan.hw2condition;
 
 import java.util.Scanner;
 
-public class SecondExercise {
+public class Exercise2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the day ");

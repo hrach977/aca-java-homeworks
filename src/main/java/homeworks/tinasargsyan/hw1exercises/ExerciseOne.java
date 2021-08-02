@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan.firstexercises;
+package homeworks.tinasargsyan.hw1exercises;
 import java.util.Scanner;
 //Take 2 numbers from input. Print their product.
 

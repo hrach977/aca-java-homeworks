@@ -1,11 +1,11 @@
-package homeworks.tinasargsyan.condition;
+package homeworks.tinasargsyan.hw2condition;
 /*
 Take two numbers from input.
 Output true if one of them is 10 or if their sum is 10.
  */
 import java.util.Scanner;
 
-public class SeventhExercise {
+public class Exercise7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the first number");

@@ -1,10 +1,10 @@
-package homeworks.tinasargsyan.condition;
+package homeworks.tinasargsyan.hw2condition;
 //Take a number from input between 1-7.
 //Output the corresponding day of week.
 
 import java.util.Scanner;
 
-public class FirstExercise {
+public class Exercise1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter the day");
