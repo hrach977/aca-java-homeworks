@@ -14,7 +14,21 @@ public class HomeworkB10 {
         String month = input.next();
         System.out.print("Year (number): ");
         int year = input.nextInt();
+        boolean leap;
         if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    leap = true;
+                } else {
+                    leap = false;
+                }
+            } else {
+                leap = true;
+            }
+        } else {
+            leap = false;
+        }
+        if (leap) {
             switch (month) {
                 case "January" -> System.out.print("31");
                 case "February" -> System.out.print("29");
