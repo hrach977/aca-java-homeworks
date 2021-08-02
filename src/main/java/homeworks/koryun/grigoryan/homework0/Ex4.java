@@ -1,4 +1,4 @@
-package homeworks.koryun.grigoryan;
+package homeworks.koryun.grigoryan.homework0;
 import java.util.*;
 public class Ex4 {
     public static void main(String[] args) {
