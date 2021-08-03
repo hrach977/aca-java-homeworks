@@ -8,10 +8,6 @@ public class Exercise7 {
 
         int a = input.nextInt();
         int b = input.nextInt();
-        boolean bool = false;
-        if( (a==10) || (b==10) || (a+b==10) ){
-            bool = true;
-        }
-        System.out.println(bool);
+        System.out.println((a==10) || (b==10) || (a+b==10));
     }
 }
