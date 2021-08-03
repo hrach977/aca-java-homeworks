@@ -13,10 +13,9 @@ public class HomeworkB3 {
         double num1 = input.nextDouble();
         System.out.print("Please enter second floating point number: ");
         double num2 = input.nextDouble();
-        double num1rnd = Math.floor(num1*1000)/1000;
-        double num2rnd = Math.floor(num2*1000)/1000;
-        System.out.println(num1rnd + " and " + num2rnd);
-        if (Math.abs(num1rnd - num2rnd) < 0.001) {
+        int num1rnd = (int) (num1*1000);
+        int num2rnd = (int) (num2*1000);
+        if (Math.abs(num1rnd - num2rnd) < 1) {
             System.out.println("They are the same up to three decimal places");
         } else {
             System.out.println("They are different");
