@@ -29,36 +29,60 @@ public class HomeworkB10 {
             leap = false;
         }
         if (leap) {
-            switch (month) {
-                case "January" -> System.out.print("31");
-                case "February" -> System.out.print("29");
-                case "March" -> System.out.print("31");
-                case "April" -> System.out.print("30");
-                case "May" -> System.out.print("31");
-                case "June" -> System.out.print("30");
-                case "July" -> System.out.print("31");
-                case "August" -> System.out.print("31");
-                case "September" -> System.out.print("30");
-                case "October" -> System.out.print("31");
-                case "November" -> System.out.print("30");
-                case "December" -> System.out.print("31");
-                default -> System.out.print("It's not a correct name of month");
+            if ("January".equals(month)) {
+                System.out.print("31");
+            } else if ("February".equals(month)) {
+                System.out.print("29");
+            } else if ("March".equals(month)) {
+                System.out.print("31");
+            } else if ("April".equals(month)) {
+                System.out.print("30");
+            } else if ("May".equals(month)) {
+                System.out.print("31");
+            } else if ("June".equals(month)) {
+                System.out.print("30");
+            } else if ("July".equals(month)) {
+                System.out.print("31");
+            } else if ("August".equals(month)) {
+                System.out.print("31");
+            } else if ("September".equals(month)) {
+                System.out.print("30");
+            } else if ("October".equals(month)) {
+                System.out.print("31");
+            } else if ("November".equals(month)) {
+                System.out.print("30");
+            } else if ("December".equals(month)) {
+                System.out.print("31");
+            } else {
+                System.out.print("It's not a correct name of month");
             }
         } else {
-            switch (month) {
-                case "January" -> System.out.print("31");
-                case "February" -> System.out.print("28");
-                case "March" -> System.out.print("31");
-                case "April" -> System.out.print("30");
-                case "May" -> System.out.print("31");
-                case "June" -> System.out.print("30");
-                case "July" -> System.out.print("31");
-                case "August" -> System.out.print("31");
-                case "September" -> System.out.print("30");
-                case "October" -> System.out.print("31");
-                case "November" -> System.out.print("30");
-                case "December" -> System.out.print("31");
-                default -> System.out.print("It's not a correct name of month");
+            if ("January".equals(month)) {
+                System.out.print("31");
+            } else if ("February".equals(month)) {
+                System.out.print("28");
+            } else if ("March".equals(month)) {
+                System.out.print("31");
+            } else if ("April".equals(month)) {
+                System.out.print("30");
+            } else if ("May".equals(month)) {
+                System.out.print("31");
+            } else if ("June".equals(month)) {
+                System.out.print("30");
+            } else if ("July".equals(month)) {
+                System.out.print("31");
+            } else if ("August".equals(month)) {
+                System.out.print("31");
+            } else if ("September".equals(month)) {
+                System.out.print("30");
+            } else if ("October".equals(month)) {
+                System.out.print("31");
+            } else if ("November".equals(month)) {
+                System.out.print("30");
+            } else if ("December".equals(month)) {
+                System.out.print("31");
+            } else {
+                System.out.print("It's not a correct name of month");
             }
         }
     }
