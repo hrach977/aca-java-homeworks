@@ -5,22 +5,26 @@ public class Ex1 {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter number in the range of 1-7");
         int number = input.nextInt();
+        String dayOfWeek="";
         if (number==1){
-            System.out.println("Monday");
+            dayOfWeek = "Monday";
         }else if(number==2){
-            System.out.println("Tuesday");
+            dayOfWeek = "Tuesday";
         }else if(number == 3){
-            System.out.println("Wednesday");
+            dayOfWeek="Wednesday";
         }else if(number==4){
-            System.out.println("Thursday");
+            dayOfWeek="Thursday";
+
         }else if(number == 5){
-            System.out.println("Friday");
+            dayOfWeek="Friday";
+
         }else if(number==6){
-            System.out.println("Saturday");
+            dayOfWeek = "Saturday";
         }else if(number==7){
-            System.out.println("Sunday");
+            dayOfWeek = "Sunday";
         }else{
-            System.out.println("Invalid input");
+            System.out.println("invalid input");
         }
+        System.out.println(dayOfWeek);
     }
 }
