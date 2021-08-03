@@ -9,6 +9,7 @@ public class Exercise9 {
         boolean a = input.nextBoolean();
         boolean b = input.nextBoolean();
         boolean out = false;
+
         if( (a && b) || (!a && !b) ){
             out = true;
         }

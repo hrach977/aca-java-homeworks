@@ -8,22 +8,24 @@ public class Exercise1 {
 
         System.out.println("Please enter week day (number between 1 and 7)");
         int day = input.nextInt();
+        String dayOfWeek;
         if(day == 1){
-            System.out.println("Monday");
+            dayOfWeek = "Monday";
         }else if(day == 2){
-            System.out.println("Tuesday");
+            dayOfWeek = "Tuesday";
         }else if(day == 3){
-            System.out.println("Wednesday");
+            dayOfWeek = "Wednesday";
         }else if(day == 4){
-            System.out.println("Thursday");
+            dayOfWeek = "Thursday";
         }else if(day == 5){
-            System.out.println("Friday");
+            dayOfWeek = "Friday";
         }else if(day == 6){
-            System.out.println("Saturday");
+            dayOfWeek = "Saturday";
         }else if(day == 7){
-            System.out.println("Sunday");
+            dayOfWeek = "Sunday";
         }else {
-            System.out.println("Invalid day range");
+            dayOfWeek = "Invalid day range";
         }
+        System.out.println(dayOfWeek);
     }
 }
