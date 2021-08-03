@@ -10,15 +10,7 @@ public class Ex4 {
             System.out.println("Error: Not a letter");
         }else if(str.length()>1){
             System.out.println("Error: Not a single letter");
-        }else if("a".equals(str)){
-            System.out.println("vowel");
-        }else if("e".equals(str)){
-            System.out.println("vowel");
-        }else if("i".equals(str)){
-            System.out.println("vowel");
-        }else if("o".equals(str)){
-            System.out.println("vowel");
-        }else if("u".equals(str)){
+        }else if("a".equals(str) || "e".equals(str) || "i".equals(str) || "o".equals(str) || "u".equals(str)) {
             System.out.println("vowel");
         }else{
             System.out.println("consonant");

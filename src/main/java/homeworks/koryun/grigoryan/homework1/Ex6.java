@@ -5,6 +5,6 @@ public class Ex6 {
         Scanner input = new Scanner(System.in);
         int num1 = input.nextInt();
         int num2 = input.nextInt();
-        System.out.println((num1 % 10 == num2%10) || (num1 % 10 == Math.round(num2/10)) || (Math.round(num1/10)==num2%10) || (Math.round(num1/10)) == Math.round(num2/10));
+        System.out.println((num1 % 10 == num2%10) || (num1 % 10 == num2/10) || (num1/10==num2%10) || (num1/10 == num2/10));
     }
 }
