@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exercise1 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);//5 and 6 should be saved
 
         System.out.println("Please enter week day (number between 1 and 7)");
         int day = input.nextInt();
