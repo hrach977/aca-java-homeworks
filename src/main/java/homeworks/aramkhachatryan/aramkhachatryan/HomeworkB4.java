@@ -23,39 +23,17 @@ public class HomeworkB4 {
             System.out.println("Error. Not a letter.");
         } else {
             switch (inpchar) {
-                case 'a':
-                    System.out.println("Vowel");
-                    break;
-                case 'e':
-                    System.out.println("Vowel");
-                    break;
-                case 'i':
-                    System.out.println("Vowel");
-                    break;
-                case 'o':
-                    System.out.println("Vowel");
-                    break;
-                case 'u':
-                    System.out.println("Vowel");
-                    break;
-                case 'A':
-                    System.out.println("Vowel");
-                    break;
-                case 'E':
-                    System.out.println("Vowel");
-                    break;
-                case 'I':
-                    System.out.println("Vowel");
-                    break;
-                case 'O':
-                    System.out.println("Vowel");
-                    break;
-                case 'U':
-                    System.out.println("Vowel");
-                    break;
-                default:
-                    System.out.println("Consonant");
-                    break;
+                case 'a' -> System.out.println("Vowel");
+                case 'e' -> System.out.println("Vowel");
+                case 'i' -> System.out.println("Vowel");
+                case 'o' -> System.out.println("Vowel");
+                case 'u' -> System.out.println("Vowel");
+                case 'A' -> System.out.println("Vowel");
+                case 'E' -> System.out.println("Vowel");
+                case 'I' -> System.out.println("Vowel");
+                case 'O' -> System.out.println("Vowel");
+                case 'U' -> System.out.println("Vowel");
+                default -> System.out.println("Consonant");
             }
         }
     }
