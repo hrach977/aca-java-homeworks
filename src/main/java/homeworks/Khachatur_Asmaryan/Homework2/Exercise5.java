@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Exercise5 {
     public static void main(String[] args) {
         int year;
-        boolean leap;
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the year ");
         year = input.nextInt();
-        if ( year % 4 == 0) {
-            leap = true;
-            System.out.println(leap);
+
+        boolean first = (year % 4 == 0) && (year % 100 != 0);
+        boolean second = year % 400 == 0;
+        if (first || second) {
+            System.out.println(year + " is a leap year");
         } else {
-            leap = false;
-            System.out.println(leap);
+            System.out.println("not a leap year");
         }
     }
 }

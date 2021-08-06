@@ -11,12 +11,8 @@ public class Exercise7 {
         num1 = input.nextInt();
         System.out.println("Please enter the second number ");
         num2 = input.nextInt();
-        if ( ( num1 + num2 ) == 10 ) {
+        if ( num1 == 10 || num2 == 10 || ( num1 + num2 ) == 10 ) {
             System.out.println("true");
-        } else if ( num1 == 10 && num2 == 0 ) {
-            System.out.println("true1");
-        } else if ( num2 == 10 && num1 == 0) {
-            System.out.println("true2");
         } else {
             System.out.println("false");
         }
