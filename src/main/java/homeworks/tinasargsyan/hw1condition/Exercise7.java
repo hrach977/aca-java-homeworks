@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan.hw2condition;
+package homeworks.tinasargsyan.hw1condition;
 /*
 Take two numbers from input.
 Output true if one of them is 10 or if their sum is 10.

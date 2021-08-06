@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan.hw2condition;
+package homeworks.tinasargsyan.hw1condition;
 /*
 Take a year from input.
 Output whether that year is a leap year or not.

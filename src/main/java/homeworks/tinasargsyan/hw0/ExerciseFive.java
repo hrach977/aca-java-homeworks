@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan.hw1exercises;
+package homeworks.tinasargsyan.hw0;
 import java.util.Scanner;
 /*
 Take a number from input, which represents the temperature in Fahrenheit scale.

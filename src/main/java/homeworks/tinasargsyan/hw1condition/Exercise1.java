@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan.hw2condition;
+package homeworks.tinasargsyan.hw1condition;
 //Take a number from input between 1-7.
 //Output the corresponding day of week.
 
@@ -9,8 +9,10 @@ public class Exercise1 {
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter the day");
         int number = sc.nextInt();
+        String dayOfWeek=" ";
         if (number == 1){
-            System.out.println("Monday");
+            //System.out.println("Monday");
+            dayOfWeek = "Monday";
         }else if(number == 2){
             System.out.println("Tuesday");
         }else if(number == 3) {
@@ -26,5 +28,6 @@ public class Exercise1 {
         }else{
             System.out.println("Invalid day range");
         }
+        System.out.println(dayOfWeek);
     }
 }

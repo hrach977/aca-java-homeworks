@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan.hw2condition;
+package homeworks.tinasargsyan.hw1condition;
 /*
 Take two integers from input.
 Output true if either of them is in the range 10..20 inclusive.
@@ -17,5 +17,6 @@ public class Exercise8 {
         }else{
             System.out.println("False");
         }
+        //System.out.println((num1>=10) && (num1<=20) || (num2>=10) && (num2<=20));
     }
 }

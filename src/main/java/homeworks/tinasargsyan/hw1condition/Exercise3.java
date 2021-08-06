@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan.hw2condition;
+package homeworks.tinasargsyan.hw1condition;
 /*
 Take two floating point numbers from input.
 Check whether they are the same up to three decimal places
@@ -12,8 +12,10 @@ public class Exercise3 {
         double num1 = sc.nextDouble();
         System.out.println("Enter the second number");
         double num2 = sc.nextDouble();
-        num1 = Math.round(num1 * 1000);
-        num2 = Math.round(num2 * 1000);
+        num1 = Math.floor(num1 * 1000);
+        num1/=1000;
+        num2 = Math.floor(num2 * 1000);
+        num2/=1000;
         //System.out.println(num1);
         //System.out.println(num2);
         if (num1 == num2) {

@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan.hw2condition;
+package homeworks.tinasargsyan.hw1condition;
 
 import java.util.Scanner;
 
@@ -7,31 +7,33 @@ public class Exercise2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the day ");
         int number = sc.nextInt();
+        String dayOfWeek=" ";
         switch(number){
             case 1:
-                System.out.println("Monday");
+                dayOfWeek="Monday";
             break;
             case 2:
-                System.out.println("Tuesday");
+                dayOfWeek="Tuesday";
                 break;
             case 3:
-                System.out.println("Wednesday");
+                dayOfWeek="Wednesday";
                 break;
             case 4:
-                System.out.println("Thursday");
+                dayOfWeek="Thursday";
                 break;
             case 5:
-                System.out.println("Friday");
+                dayOfWeek="Friday";
                 break;
             case 6:
-                System.out.println("Saturday");
+                dayOfWeek="Saturday";
                 break;
             case 7:
-                System.out.println("Sunday");
+                dayOfWeek="Sunday";
                 break;
             default:
                 System.out.println("Invalid day range");
                 break;
         }
+        System.out.println(dayOfWeek);
     }
 }

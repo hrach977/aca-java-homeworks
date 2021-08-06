@@ -1,4 +1,4 @@
-package homeworks.tinasargsyan.hw2condition;
+package homeworks.tinasargsyan.hw1condition;
 /*
 Take two Booleans from input, which represent whether two monkeys smile or not.
 We are in trouble if they are both smiling
@@ -18,5 +18,9 @@ public class Exercise9 {
             System.out.println("true");
         }else
             System.out.println("false");
+        /*ver2
+        System.out.println(smile1 == smile2);
+         */
+
     }
 }
