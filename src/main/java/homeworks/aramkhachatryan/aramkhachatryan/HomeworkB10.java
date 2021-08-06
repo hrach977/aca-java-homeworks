@@ -14,76 +14,17 @@ public class HomeworkB10 {
         String month = input.next();
         System.out.print("Year (number): ");
         int year = input.nextInt();
-        boolean leap;
-        if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                if (year % 400 == 0) {
-                    leap = true;
-                } else {
-                    leap = false;
-                }
-            } else {
-                leap = true;
-            }
+        boolean leap = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+        if (leap && (month == "February")) {
+            System.out.print("29");
+        } else if (month == "February") {
+            System.out.print("28");
+        } else if (month == "January" || month == "March" || month == "May" || month == "July" || month == "August" || month == "October" || month == "December") {
+            System.out.print("31");
+        } else if (month == "April" || month == "June" || month == "September" || month == "November") {
+            System.out.print("30");
         } else {
-            leap = false;
-        }
-        if (leap) {
-            if ("January".equals(month)) {
-                System.out.print("31");
-            } else if ("February".equals(month)) {
-                System.out.print("29");
-            } else if ("March".equals(month)) {
-                System.out.print("31");
-            } else if ("April".equals(month)) {
-                System.out.print("30");
-            } else if ("May".equals(month)) {
-                System.out.print("31");
-            } else if ("June".equals(month)) {
-                System.out.print("30");
-            } else if ("July".equals(month)) {
-                System.out.print("31");
-            } else if ("August".equals(month)) {
-                System.out.print("31");
-            } else if ("September".equals(month)) {
-                System.out.print("30");
-            } else if ("October".equals(month)) {
-                System.out.print("31");
-            } else if ("November".equals(month)) {
-                System.out.print("30");
-            } else if ("December".equals(month)) {
-                System.out.print("31");
-            } else {
-                System.out.print("It's not a correct name of month");
-            }
-        } else {
-            if ("January".equals(month)) {
-                System.out.print("31");
-            } else if ("February".equals(month)) {
-                System.out.print("28");
-            } else if ("March".equals(month)) {
-                System.out.print("31");
-            } else if ("April".equals(month)) {
-                System.out.print("30");
-            } else if ("May".equals(month)) {
-                System.out.print("31");
-            } else if ("June".equals(month)) {
-                System.out.print("30");
-            } else if ("July".equals(month)) {
-                System.out.print("31");
-            } else if ("August".equals(month)) {
-                System.out.print("31");
-            } else if ("September".equals(month)) {
-                System.out.print("30");
-            } else if ("October".equals(month)) {
-                System.out.print("31");
-            } else if ("November".equals(month)) {
-                System.out.print("30");
-            } else if ("December".equals(month)) {
-                System.out.print("31");
-            } else {
-                System.out.print("It's not a correct name of month");
-            }
+            System.out.print("It's not a correct name of month");
         }
     }
 }

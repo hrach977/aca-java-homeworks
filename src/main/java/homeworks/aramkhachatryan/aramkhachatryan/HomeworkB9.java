@@ -20,10 +20,6 @@ public class HomeworkB9 {
         boolean monkey1 = input.nextBoolean();
         System.out.print("Second monkey: ");
         boolean monkey2 = input.nextBoolean();
-        if ((monkey1 && monkey2) || (!monkey1 && !monkey2)) {
-            System.out.println("True");
-        } else {
-            System.out.println("False");
-        }
+        System.out.print(monkey1==monkey2);
     }
 }
