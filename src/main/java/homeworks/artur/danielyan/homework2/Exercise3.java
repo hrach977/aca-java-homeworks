@@ -14,7 +14,7 @@ public class Exercise3 {
         for(int i = 2; i < n; i++){
             fiboncci[i] = fiboncci[i-2] + fiboncci[i-1];
         }
-        for(int num : fiboncci){
+        for(int num : fiboncci) {
             System.out.println(num);
         }
     }
