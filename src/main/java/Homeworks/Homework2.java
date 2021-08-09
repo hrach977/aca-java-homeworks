@@ -1,5 +1,6 @@
 package Homeworks;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Homework2 {
@@ -82,8 +83,6 @@ public class Homework2 {
         }*/
 
 
-
-
 //           Exercise 8
 //Solve Exercise 7 without constructing a new array. Just modify the original one
      /*  int[] arr = {6, 2, 5, 3};
@@ -101,7 +100,6 @@ public class Homework2 {
             }
 
         }*/
-
 
 
 //           Exercise 9
@@ -123,13 +121,98 @@ public class Homework2 {
         }*/
 
 
-
-
-//      Exercise 10
+//      Exercise 10 UNSOLVED
 // Given two arrays of ints of the same length,
 // for every element in the first array consider the corresponding element in the second array (i.e. at the same index).
 // Output the count of the number of times that the two elements differ by 2 or less, but are not equal.
 
 
+//          Exercise 11
+/*
+int[] arr= {10,4, 12389, 12390};
+        Arrays.sort(arr);
+        System.out.println("The difference is " + (arr[3] - arr[0]));
+
+*/
+
+
+//         Exercise 12
+//Given an array of ints,
+// output true if the sum of all the ‘2’-s in the array is exactly ‘8’
+       /*int[] arr = {2, 4, 8, 112, 2, 8, 1290, 3, 6, 2, 0, 90, 2 };
+       int sum = 0;
+       for(int coll: arr){
+           if (coll ==2){
+               sum+=2;
+           }
+
+       }
+        System.out.println(sum==8);*/
+
+
+//      Exercise 13
+//Write a program to reverse the elements of an integer array (1 dimensional)
+
+    /*    int[] arr = {1, 2, 3, 4, 5,6,7, 8, 9, 10};
+        System.out.println("This is a line of elements without reverse");
+        for(int i = 0; i < arr.length; i++ ) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+        System.out.println("This is a line of elements with reverse");
+
+        for(int i = arr.length- 1; i>=0; i--){
+            System.out.print(arr[i] + " ");
+        }*/
+
+
+//     Exercise 14
+//Write a program to find and print the common elements between two arrays of integers.
+/*
+        int[] arr = {1231, 456, 1239, 56, 89,35487 } ;
+        int[] arr1 = { 3289, 456, 90909, 547, 8787, 1239};
+
+        int equal;
+       for(int a : arr){
+           for(int b : arr1){
+               if(a == b ){
+                   equal = a;
+                   System.out.println(equal);
+               }
+           }
+
+
+       }
+       */
+
+
+
+
+//       Exercise 15
+
+//Write a program to find all pairs of elements in an integer array whose sum is equal to a specified number.
+// The number is input by the user.
+
+        Scanner input= new Scanner(System.in);
+        int sum = input.nextInt();
+        int[] arr = {4, 6, 4, 2, 8 };
+        int count = 0;
+        for (int i =  0; i < arr.length; i++)
+        {
+            for (int j  = i+1; j < arr.length; j++)
+            {
+                if(arr[i]+arr[j] == sum)
+                {
+                    count++;
+                    System.out.println( arr[i] + " + " + arr[j] + " = " + sum);
+                }
+            }
+        }
+        System.out.println("The number of all variants is "+ count);
     }
-}
+
+
+
+
+
+    }
