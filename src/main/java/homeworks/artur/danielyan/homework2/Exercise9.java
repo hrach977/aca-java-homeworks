@@ -8,13 +8,13 @@ public class Exercise9 {
 
         boolean flag = true;
 
-        if(arr.length != 0){
-            for(int e : arr){
-                if(e != 1 && e !=4){
-                    flag = false;
-                }
+        for(int e : arr){
+            if(e != 1 && e !=4){
+                flag = false;
+                break;
             }
         }
+
         System.out.println(flag);
     }
 }
