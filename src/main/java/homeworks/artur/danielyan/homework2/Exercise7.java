@@ -2,7 +2,7 @@ package homeworks.artur.danielyan.homework2;
 
 public class Exercise7 {
     public static void main(String[] args) {
-        int[] arr = {};
+        int[] arr = {2,5,6,4};
 
         if(arr.length != 0) {
             int[] newArr = new int[arr.length];
