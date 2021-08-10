@@ -8,12 +8,8 @@ public class Exercise11 {
         int min = arr[0];
 
         for(int e : arr){
-            if(e > max){
-                max = e;
-            }
-            if(e < min){
-                min = e;
-            }
+            max = Math.max(max, e);
+            min = Math.min(min, e);
         }
         System.out.println(max - min);
     }
