@@ -14,5 +14,6 @@ public class Exercise4 {
             result += 1d/i;
         }
         System.out.println(result);
+
     }
 }
