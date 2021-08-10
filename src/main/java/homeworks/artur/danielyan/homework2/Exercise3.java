@@ -5,17 +5,32 @@ import java.util.Scanner;
 public class Exercise3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter the term");
-        int n = input.nextInt();
-        int[] fiboncci = new int[n];
-        fiboncci[0] = 0;
-        fiboncci[1] = 1;
 
-        for(int i = 2; i < n; i++){
-            fiboncci[i] = fiboncci[i-2] + fiboncci[i-1];
+        int firstTerm = 0;
+        int secondTerm = 1;
+        int thirdTerm;
+
+        System.out.println("Please enter number of terms of series");
+        int number = input.nextInt();
+
+        System.out.print(firstTerm + " " + secondTerm + " ");
+
+        for(int i = 3; i <=number; i++){
+            thirdTerm = firstTerm + secondTerm;
+            System.out.print(thirdTerm + " ");
+            firstTerm = secondTerm;
+            secondTerm = thirdTerm;
         }
-        for(int num : fiboncci) {
-            System.out.println(num);
-        }
+
+//        int[] fiboncci = new int[n];
+//        fiboncci[0] = 0;
+//        fiboncci[1] = 1;
+//
+//        for(int i = 2; i < n; i++){
+//            fiboncci[i] = fiboncci[i-2] + fiboncci[i-1];
+//        }
+//        for(int num : fiboncci) {
+//            System.out.println(num);
+//        }
     }
 }
