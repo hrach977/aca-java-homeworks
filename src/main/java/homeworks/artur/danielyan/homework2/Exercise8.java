@@ -2,7 +2,7 @@ package homeworks.artur.danielyan.homework2;
 
 public class Exercise8 {
     public static void main(String[] args) {
-        int[] arr = {};
+        int[] arr = {1,2,3,4,5};
 
         if(arr.length != 0) {
             int save = arr[0];
