@@ -12,17 +12,22 @@ public class Exercise5 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter the number");
         int n = sc.nextInt();
-        double sum1= 0;
-        double sum2= 0;
-        double sum;
-        for(double i=1;i<=n;i++){
+        double sum = 0;
+        for(int i=1;i<=n;i++){
             if(i%2==0){
-                sum1-=1/i;
+                sum-=1.0/i;
             }else{
-                sum2+=1/i;
+                sum+=1.0/i;
             }
         }
-        sum=sum1+sum2;
+         System.out.println(sum);
+        /*v2
+        int sign = 1;
+        for(int i=1;i<=n;i++){
+            sum += (1.0 * sign)/i;
+            sign *= -1;
+        }
         System.out.println(sum);
+         */
     }
 }
