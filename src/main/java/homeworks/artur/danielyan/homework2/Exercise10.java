@@ -6,8 +6,9 @@ public class Exercise10 {
         int[] arr2 = {5,4,5,18,82,3,8};
 
         int count = 0;
+
         for(int i = 0; i < arr1.length; i++){
-            if( (arr1[i] - arr2[i] <= 2) && (arr1[i] - arr2[i] >= -2) && (arr1[i] - arr2[i] != 0) ){
+            if( Math.abs(arr1[i]-arr2[i]) <= 2 && (arr1[i] - arr2[i] != 0) ){
                 count++;
             }
         }
