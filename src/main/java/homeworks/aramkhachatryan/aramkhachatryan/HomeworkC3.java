@@ -14,13 +14,13 @@ public class HomeworkC3 {
         int prev1 = fib - 1;
         if (turns == 1) {
             System.out.println(0);
-        } else if (turns == 1) {
+        } else if (turns == 2) {
             System.out.println(0);
             System.out.println(1);
         } else {
             System.out.println(0);
             System.out.println(1);
-            for (int i = 0; i <= turns; i++) {
+            for (int i = 0; i <= turns-3; i++) {
                 fib = prev1 + prev2;
                 System.out.println(fib);
                 prev2 = prev1;
