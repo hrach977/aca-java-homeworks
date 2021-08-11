@@ -14,11 +14,13 @@ public class Exercise15 {
         int[] arr = {1,3,5,6,9,8};
         System.out.println("the elements whose sum is: "+ n);
         for(int i=0; i<arr.length; i++){
-            for (int j=i; j<arr.length; j++){
-                if((arr[i]+arr[j])== n && i!=j){
+//            for (int j=i; j<arr.length; j++){
+//                if((arr[i]+arr[j])== n && i!=j){
+            //V2
+            for (int j=i+1; j<arr.length; j++){
+                 if((arr[i]+arr[j])== n)
                     System.out.println(arr[i] + " + " + arr[j] + " = " + n);
                 }
             }
         }
     }
-}
