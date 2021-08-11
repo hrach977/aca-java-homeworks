@@ -9,18 +9,23 @@ public class Exercise11 {
         int[] arr = {5, 7, 4, 9, 20};
         int max = arr[0];
         int min = arr[0];
-        int sum=0;
-        for(int i=1;i< arr.length;i++){
-            if(arr[i]>max){
-                max=arr[i];
-            }else if(arr[i]<min){
-                min=arr[i];
-            }
+        int dif=0;
+//        for(int i=1;i< arr.length;i++){
+//            if(arr[i]>max){
+//                max=arr[i];
+//            }else if(arr[i]<min){
+//                min=arr[i];
+//            }
+//        }
+        //V2
+        for(int element : arr){
+            max=Math.max(max,element);
+            min = Math.min(min,element);
         }
-        sum=max-min;
+        dif=max-min;
         System.out.println("Max value is " + max);
         System.out.println("Min value is " + min);
         System.out.println("Difference "
-                + max + " - " + min + " = " + sum);
+                + max + " - " + min + " = " + dif);
     }
 }
