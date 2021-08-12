@@ -1,36 +1,35 @@
 package homeworks.Khachatur_Asmaryan.Homework2;
 
-import java.util.Scanner;
-
 public class Exercise2 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int num = input.nextInt();
-        switch ( num ) {
-            case 1:
-                System.out.println("Monday");
-                break;
-            case 2:
-                System.out.println("Tuesday");
-                break;
-            case 3:
-                System.out.println("Wednesday");
-                break;
-            case 4:
-                System.out.println("Thursday");
-                break;
-            case 5:
-                System.out.println("Friday");
-                break;
-            case 6:
-                System.out.println("Saturday");
-                break;
-            case 7:
-                System.out.println("Sunday");
-                break;
-            default:
-                System.out.println("Invalid day range");
-                break;
+        int digit1;
+        int digit2;
+        int digit3;
+        int temp;
+
+        for (int number = 1; number <= 500; number++) {
+            if (number<10) {
+                System.out.println(number);
+        } else if (number >= 10 && number <= 99){
+                temp = number;
+                digit1 = temp%10;
+                temp/=10;
+                digit2 = temp%10;
+                if (Math.pow(digit1, 2) + Math.pow(digit2, 2) == number) {
+                    System.out.println(number);
+                }
+            } else if (number >= 100 && number <= 500) {
+                temp = number;
+                digit1 = temp%10;
+                temp/=10;
+                digit2 = temp%10;
+                temp/=10;
+                digit3 = temp%10;
+                if (Math.pow(digit1, 3) + Math.pow(digit2, 3) + Math.pow(digit3, 3) == number) {
+                    System.out.println(number);
+                }
+            }
         }
+
     }
 }

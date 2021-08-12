@@ -4,26 +4,31 @@ import java.util.Scanner;
 
 public class Exercise1 {
     public static void main(String[] args) {
-        int num;
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter number ");
-        num = input.nextInt();
-        if ( num == 1 ) {
-            System.out.println("Monday");
-        } else if (num == 2) {
-            System.out.println("Tuesday");
-        } else if (num == 3) {
-            System.out.println("Wednesday");
-        } else if (num == 4) {
-            System.out.println("Thursday");
-        } else if (num == 5) {
-            System.out.println("Friday");
-        } else if (num == 6) {
-            System.out.println("Saturday");
-        } else if (num == 7) {
-            System.out.println("Sunday");
-        } else {
-            System.out.println("Invalid day range");
-        }
+
+        int number;
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        char choice;
+
+        do {
+            System.out.println("Please enter tne number ");
+            number = input.nextInt();
+
+            if (number > max) {
+                max = number;
+            }
+
+            if (number < min ) {
+                min = number;
+            }
+            System.out.println("Do you want to continue? y/n");
+            choice = input.next().charAt(0);
+
+        }while (choice == 'y');
+
+        System.out.println("Largest number: " + max);
+        System.out.println("Smallest number: " + min);
+
     }
 }

@@ -1,21 +1,18 @@
 package homeworks.Khachatur_Asmaryan.Homework2;
 
-import java.util.Scanner;
-
 public class Exercise8 {
     public static void main(String[] args) {
-        int num1;
-        int num2;
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter the first number ");
-        num1 = input.nextInt();
-        System.out.println("Please enter the second number ");
-        num2 = input.nextInt();
-        if ( ( (num1 > 10) && (num1 < 20) ) || ((num2 > 10) && (num2 < 20)) ) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
+        int[] nums = {1, 2, 3, 4};
+        if (nums.length != 0) {
+            int tmp = nums[0];
+            for (int i = 1; i<=nums.length; i++) {
+                nums[i - 1] = nums[i];
+            }
+            nums[nums.length] = tmp;
 
+            for (int elem : nums ) {
+                System.out.println(elem + " ");
+            }
+        }
     }
 }

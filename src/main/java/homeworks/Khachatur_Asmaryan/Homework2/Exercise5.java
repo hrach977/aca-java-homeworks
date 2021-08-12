@@ -4,17 +4,19 @@ import java.util.Scanner;
 
 public class Exercise5 {
     public static void main(String[] args) {
-        int year;
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter the year ");
-        year = input.nextInt();
+        int number;
+        System.out.println("Please enter the number");
+        number = input.nextInt();
 
-        boolean first = (year % 4 == 0) && (year % 100 != 0);
-        boolean second = year % 400 == 0;
-        if (first || second) {
-            System.out.println(year + " is a leap year");
-        } else {
-            System.out.println("not a leap year");
+        double sum = 0;
+        int sign = 1;
+
+        for (int i = 1; i <=number; i++) {
+            sum += (1.0 * sign)/i;
+            sign *= -1;
         }
+        System.out.println("sum: " + sum) ;
     }
+
 }

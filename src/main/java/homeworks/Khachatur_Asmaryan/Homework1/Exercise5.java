@@ -4,11 +4,17 @@ import java.util.Scanner;
 
 public class Exercise5 {
     public static void main(String[] args) {
-        float fahrenheit;
-        float celsius;
+        int year;
         Scanner input = new Scanner(System.in);
-        fahrenheit = input.nextFloat();
-        celsius = (fahrenheit - 32) * 5 / 9;
-        System.out.println(fahrenheit + " degree in Fahrenheit is equal to " +  celsius + " in Celsius");
+        System.out.println("Please enter the year ");
+        year = input.nextInt();
+
+        boolean first = (year % 4 == 0) && (year % 100 != 0);
+        boolean second = year % 400 == 0;
+        if (first || second) {
+            System.out.println(year + " is a leap year");
+        } else {
+            System.out.println("not a leap year");
+        }
     }
 }

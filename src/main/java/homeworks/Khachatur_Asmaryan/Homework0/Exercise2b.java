@@ -1,4 +1,4 @@
-package homeworks.Khachatur_Asmaryan.Homework1;
+package homeworks.Khachatur_Asmaryan.Homework0;
 
 import java.util.Scanner;
 

@@ -1,6 +1,5 @@
-package homeworks.Khachatur_Asmaryan.Homework2;
+package homeworks.Khachatur_Asmaryan.Homework1;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Exercise10 {
