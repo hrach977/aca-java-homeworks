@@ -2,10 +2,13 @@ package homeworks.artur.danielyan.homework3;
 
 public class Exercise5 {
     public static void main(String[] args) {
-        System.out.println(endsInLY("quietly"));
+        System.out.println(takeFromEdge("Hello!", false));
     }
 
-    public static boolean endsInLY(String word){
-        return word.endsWith("ly");
+    public static String takeFromEdge(String str, boolean front){
+        if(front){
+            return str.substring(0,1);
+        }
+        return str.substring(str.length()-1);
     }
 }
