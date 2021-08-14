@@ -15,7 +15,7 @@ public class Exercise10 {
         }else if (str.length() == 1){
             firstTwo = str;
         }else{
-            firstTwo = "";
+            return "";
         }
 
         return firstTwo + firstTwo + firstTwo;
