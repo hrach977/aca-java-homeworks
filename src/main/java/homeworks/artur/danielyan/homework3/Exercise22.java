@@ -6,6 +6,8 @@ public class Exercise22 {
         System.out.println(isXYBalanced("xyx"));//false
         System.out.println(isXYBalanced("gjwl xx greuo yfno"));//true
         System.out.println(isXYBalanced(" geiry i[rwefxx fnpw"));//false
+        System.out.println(isXYBalanced("fwqx or xojx xxx y"));//true
+        System.out.println(isXYBalanced("yyyy g3bn y x"));//false
     }
 
     public static boolean isXYBalanced(String str){
