@@ -1,0 +1,115 @@
+import java.util.*;
+public class Main {
+	public static final double CM_PER_INCH = 2.54;
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("Exercise 1");
+		//Exercise 1
+		// Take 2 numbers from input. Print their product.
+		Scanner in = new Scanner(System.in);
+		System.out.println("Please enter the first integer");
+		int firstInteger = in.nextInt();
+		System.out.println("Please enter the second integer");
+		int secondInteger = in.nextInt();
+		System.out.println(firstInteger+" * " +secondInteger+
+				" = "+(firstInteger*secondInteger));
+
+		
+		System.out.println("Exercise 2");
+		//Exercise 2
+		//Take 2 numbers from input. Print the result of their division
+		System.out.println("Please  enter the  integer for division");
+			int integerForDivision = in.nextInt();
+		System.out.println("Please enter the integer of divider ");
+			int dividerInteger = in.nextInt();
+			float fractionalNumber =(float)integerForDivision;
+		System.out.println("If the number is int "+(integerForDivision/dividerInteger));
+		System.out.println("If the number is  float "+(fractionalNumber/dividerInteger));
+		
+		
+		System.out.println("Exercise 3");
+		// Exercise 3
+		//Take a number from input. Print its multiplication table up to 10
+		System.out.println("Please enter the integer");
+		int numberForMult = in.nextInt();
+		for(int i = 1; i <= 10; i++){
+			int resultInt = numberForMult * i;
+			System.out.println(numberForMult + " * " + i + " = " + resultInt);
+		}
+		
+		
+		System.out.println("Exercise 4");
+		// Exercise 4
+		//Take a number from input, which will represent the side of a square. 
+		//Print the perimeter and the area of the square
+		System.out.println("Please enter the side of square ");
+		int sideOfSquare = in.nextInt();
+		System.out.println(" The perimeter of square = " + (sideOfSquare*4));
+		int areaOfSquare = (int)Math.pow(sideOfSquare,2);
+		System.out.println(" The area of square = " + areaOfSquare);
+		
+		
+		
+		System.out.println("Exercise 5");
+		//Exercise 5
+		//Take a number from input, which represents the temperature in Fahrenheitscale.
+		//Convert it into Celsius and outputthe degree.
+		System.out.println("Enter the temprature in Fahringate ");
+		float fahrTemperature =(float) in.nextInt();
+		float celsTemperature = (fahrTemperature-32)*5/9;
+		System.out.println("The " + fahrTemperature + " Fahrenheit  is a " + celsTemperature + " Celsius");
+		
+		
+		
+		System.out.println("Exercise 6");
+		//Exercise 6
+		//Take a number in inches from input. Convert it to meters and print out
+		System.out.println("Enter the number in inches");
+		int inchesNumber = in.nextInt();
+		double cmValue =  inchesNumber * Main.CM_PER_INCH;
+		System.out.println("The " + inchesNumber + " inches is a " + cmValue + " CM ");
+		
+		
+		
+		System.out.println("Exercise 7");
+		//Exercise 7
+		//Take 5 numbers from input. Output their sum and average.
+		int[] integerColection = new int[5];
+		int j=0;
+		int sumOfNumbers = 0;
+		for(int i = 0; i < integerColection.length; i++ ){
+			
+			j++;
+			System.out.println("Please enter the  " + j + " integer");
+			integerColection[i] = in.nextInt();
+			sumOfNumbers = sumOfNumbers + integerColection[i];
+
+		}
+		
+			float averageNumbers =(float)sumOfNumbers/integerColection.length;
+			System.out.println("The sum of numbers is  " + sumOfNumbers + " and their average is  "
+					+ averageNumbers );
+			
+			
+			
+		System.out.println("Exercise 8");
+		//Exercise 8
+		//Take two numbers from input. Swap them and print out.
+		System.out.println("Enter the Integer X");
+			int firstX = in.nextInt();
+		System.out.println("Enter the Integer Y");
+			int firstY = in.nextInt();
+		System.out.println("Before swapping X = " + firstX + ", Y = " + firstY);
+		  int chenger = firstX;
+		  firstX = firstY;
+		  firstY = chenger;
+		  System.out.println("After swapping X = " + firstX + ", Y = " + firstY);
+		  
+		  
+		
+			
+	}
+
+}
