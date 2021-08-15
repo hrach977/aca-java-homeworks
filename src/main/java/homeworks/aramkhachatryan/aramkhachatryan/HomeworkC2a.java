@@ -5,8 +5,9 @@
 
 package aramkhachatryan;
 
-public class HomeworkC2 {
+public class HomeworkC2a {
     public static void main(String[] args) {
+        int power;
         int dig1;
         int dig2;
         int dig3;

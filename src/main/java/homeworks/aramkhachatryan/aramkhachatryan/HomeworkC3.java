@@ -20,7 +20,7 @@ public class HomeworkC3 {
         } else {
             System.out.println(0);
             System.out.println(1);
-            for (int i = 0; i <= turns-3; i++) {
+            for (int i = 3; i <= turns+1; i++) {
                 fib = prev1 + prev2;
                 System.out.println(fib);
                 prev2 = prev1;

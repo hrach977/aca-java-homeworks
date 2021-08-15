@@ -20,11 +20,9 @@ public class HomeworkC15 {
         System.out.println("Please enter a number.");
         int num = input.nextInt();
         for (int i = 0; i < lngt; i++) {
-            for (int j = 0; j < lngt; j++) {
+            for (int j = i + 1; j < lngt; j++) {
                 if ((j != i) && ((arr[i] + arr[j]) == num)) {
                     System.out.println(arr[i] + " + " + arr[j] + " = " + num);
-                } else {
-                    System.out.println(false);
                 }
             }
         }
