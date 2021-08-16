@@ -6,6 +6,6 @@ public class ex1 {
     }
 
     public static String hello(String name){
-        return "Hello " + name + "!";
+        return "Hello " + name + " !";
     }
 }
