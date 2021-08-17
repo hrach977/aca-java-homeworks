@@ -15,19 +15,34 @@ public class Exercise23 {
         str = str.toLowerCase();
         int countCat = 0;
         int countDog = 0;
+        //V1
+//        for(int i=0;i<str.length()-2;i++){
+//            String str1 = str.substring(i,i+3);
+//            if(str1.compareTo("cat")==0){
+//                countCat++;
+//            }
+//            if(str1.compareTo("dog")==0){
+//                countDog++;
+//            }
+//        }
+//        if(countCat == countDog){
+//            return true;
+//        }
+//        return false;
+//    }
+        //V2
         for(int i=0;i<str.length()-2;i++){
-            String str1 = str.substring(i,i+3);
-            if(str1.compareTo("cat")==0){
+            if(str.startsWith("cat",i)){
                 countCat++;
+                i+=2;
             }
-            if(str1.compareTo("dog")==0){
+            if(str.startsWith("dog",i)){
                 countDog++;
+                i+=2;
             }
         }
-        if(countCat == countDog){
-            return true;
-        }
-        return false;
+
+        return countCat == countDog;
     }
 
 }
