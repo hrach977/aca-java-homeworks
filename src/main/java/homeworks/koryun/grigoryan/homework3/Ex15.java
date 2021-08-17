@@ -6,9 +6,11 @@ public class Ex15 {
         System.out.println(rotate("ab"));
     }
     public static String rotate(String str){
-        if (str.length() > 2) {
-            return str.substring(2) + str.substring(0, 2);
-        }
-        return str;
+//        if (str.length() > 2) {
+//            return str.substring(2) + str.substring(0, 2);
+//        }
+//        return str;
+        return str.substring(2)+str.substring(0,2);
+        // if begin index equals to length of the string, no error is given
     }
 }
