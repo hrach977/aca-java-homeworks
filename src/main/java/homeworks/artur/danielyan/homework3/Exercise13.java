@@ -7,7 +7,6 @@ public class Exercise13 {
     }
 
     public static String threeOfLastTwo(String str){
-        if(str.length() == 2) return str + str + str;
         String substring = str.substring(str.length()-2);
         return substring + substring + substring;
     }
