@@ -8,8 +8,10 @@ public class Exercise23 {
         for (int i = 0; i < string.length() - 2; i++) {
             if (string.charAt(i) == 'c' && string.charAt(i + 1) == 'a' && string.charAt(i + 2) == 't') {
                 catCount++;
+                i += 2;
             } else if (string.charAt(i) == 'd' && string.charAt(i + 1) == 'o' && string.charAt(i + 2) == 'g') {
                 dogCount++;
+                i += 2;
             }
         }
         return catCount == dogCount;
