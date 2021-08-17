@@ -6,10 +6,6 @@ public class Exercise7 {
     }
 
     public static String fromMiddle(String str){
-        if(str.length()%2 != 1){
-            System.out.println("Given String length must be odd");
-            return "";
-        }
-        return str.substring(str.length()/2 - 1, str.length() - str.length()/2 + 1);
+        return str.substring(str.length()/2 - 1, str.length()/2 + 2);
     }
 }
