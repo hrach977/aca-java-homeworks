@@ -10,7 +10,7 @@ public class Exercise18 {
 
     public static String nRepetitionOfLastN(String str, int n){
         StringBuilder result = new StringBuilder();
-        for(int i = str.length() - n; i < str.length(); i++){
+        for(int i = 0; i < n; i++){
             result.append( str.substring(str.length()-n) );
         }
         return result.toString();
