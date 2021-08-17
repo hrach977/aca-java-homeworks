@@ -7,6 +7,7 @@ public class Exercise20 {
         for (int i = 0; i < string.length() - 1; i++) {
             if (string.charAt(i) == 'h' && string.charAt(i + 1) == 'i') {
                 count++;
+                i++;
             }
         }
         return count;
