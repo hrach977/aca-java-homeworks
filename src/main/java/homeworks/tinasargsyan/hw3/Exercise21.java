@@ -13,18 +13,24 @@ public class Exercise21 {
     }
 
     public static boolean endString(String str1, String str2){
-        str1 = str1.toLowerCase();
-        str2 = str2.toLowerCase();
-        if(str1.length() < str2.length()){
-            String tmp = str2.substring(str2.length()-str1.length());
-            if(tmp.compareTo(str1)==0){
-                return true;
-            }return false;
-        }else{
-            String tmp = str1.substring(str1.length()-str2.length());
-            if(tmp.compareTo(str2)==0){
-                return true;
-            }return false;
-        }
+        //V1
+//        str1 = str1.toLowerCase();
+//        str2 = str2.toLowerCase();
+//        if (str1.length() < str2.length()){
+//            String tmp = str2.substring(str2.length()-str1.length());
+//            if(tmp.compareTo(str1)==0){
+//                return true;
+//            }return false;
+//        }else{
+//            String tmp = str1.substring(str1.length()-str2.length());
+//            if(tmp.compareTo(str2)==0){
+//                return true;
+//            }return false;
+//        }
+
+        //V2
+        String first = str1.toLowerCase();
+        String second = str2.toLowerCase();
+        return first.endsWith(second) || second.endsWith(first);
     }
 }
