@@ -13,15 +13,22 @@ public class Exercise18 {
         String word = sc.nextLine();
         System.out.println("Please enter the number");
         int number = sc.nextInt();
-        System.out.println(repetition(word,2));
+        System.out.println(repeatEnd(word,number));
     }
 
 
-    public static String repetition(String str, int n){
-        String newWord = "";
-        for(int i = 0;i<n; i++){
-            newWord += str.substring(str.length()-n);
+    public static String repeatEnd(String str, int n){
+//        String newWord = "";
+//        for(int i = 0;i<n; i++){
+//            newWord += str.substring(str.length()-n);
+//        }
+//        return newWord;
+
+        String last = str.substring(str.length()-n);
+        StringBuilder result = new StringBuilder();
+        for(int i=1; i<=n; i++){
+            result.append(last);
         }
-        return newWord;
+        return result.toString();
     }
 }
