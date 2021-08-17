@@ -9,7 +9,7 @@ public class Ex10 {
     }
     public static String generateString(String str){
         if (str.length()<2){
-            return str;
+            return str+str+str;
         }
         return str.substring(0,2)+str.substring(0,2)+str.substring(0,2);
     }

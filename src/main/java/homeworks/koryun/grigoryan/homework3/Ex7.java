@@ -5,6 +5,7 @@ public class Ex7 {
         System.out.println(middleOfString("candy"));
         System.out.println(middleOfString("house"));
         System.out.println(middleOfString("sometimes"));
+        System.out.println(middleOfString("and"));
     }
     public static String middleOfString(String str){
         return ""+str.charAt(str.length()/2-1) + str.charAt(str.length()/2) + str.charAt(str.length()/2+1);
