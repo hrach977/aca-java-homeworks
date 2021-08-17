@@ -9,7 +9,7 @@ public class Exercise16 {
     }
 
     public static String removeEdges(String str){
-        if (str.length() < 2) return "";
+        if (str.length() <= 2) return "";
         return str.substring(1,str.length()-1);
     }
 }
