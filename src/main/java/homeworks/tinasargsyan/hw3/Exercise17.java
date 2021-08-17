@@ -18,11 +18,18 @@ public class Exercise17 {
 //        }
 //        return str1;
         //V2
-        String str1 = "";
-        for ( int i = 0; i < str.length(); i++ ) {
-            str1 += str.charAt(i) + str.charAt(i);
+//        String str1 = "";
+//        for ( int i = 0; i < str.length(); i++ ) {
+//            str1 += str.charAt(i) + str.charAt(i);
+//        }
+//        return str1;
+
+        //V3
+        StringBuilder result = new StringBuilder();
+        for(char ch : str.toCharArray()){
+            result.append(ch).append(ch);
         }
-        return str1;
+        return result.toString();
 
     }
 }
