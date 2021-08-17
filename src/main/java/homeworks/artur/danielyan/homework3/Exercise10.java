@@ -9,15 +9,10 @@ public class Exercise10 {
     }
 
     public static String threeOfFirstTwo(String str){
-        String firstTwo;
+        String firstTwo = str;
         if (str.length() >= 2){
             firstTwo = str.substring(0,2);
-        }else if (str.length() == 1){
-            firstTwo = str;
-        }else{
-            return "";
         }
-
         return firstTwo + firstTwo + firstTwo;
     }
 }
