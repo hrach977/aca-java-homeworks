@@ -12,7 +12,7 @@ public class Exercise20 {
     public static int howManyHi(String str){
         int count = 0;
         for(int i = 0; i <= str.length()-2; i++){
-            if(str.charAt(i) == 'h' && str.charAt(i+1) == 'i'){
+            if(str.startsWith("hi",i)){
                 count++;
             }
         }
