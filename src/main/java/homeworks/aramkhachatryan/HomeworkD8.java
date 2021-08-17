@@ -14,13 +14,14 @@ public class HomeworkD8 {
         String str1 = input.next();
         System.out.print("B) ");
         String str2 = input.next();
-        System.out.println(concat(str1,str2));
+        System.out.println(concat(str1, str2));
     }
+
     public static String concat(String str1, String str2) {
         String result;
-        if (str1.length()==0) {
+        if (str1.length() == 0) {
             result = "@" + str2.substring(str2.length() - 1);
-        } else if (str2.length()==0) {
+        } else if (str2.length() == 0) {
             result = str1.substring(0, 1) + "@";
         } else {
             result = str1.substring(0, 1) + str2.substring(str2.length() - 1);

@@ -15,16 +15,17 @@ public class HomeworkD22 {
         String str = input.next();
         System.out.println(balanced(str));
     }
+
     public static boolean balanced(String str) {
-        int indexX = 0, indexY=0;
-        for (int i=0; i<str.length(); i++) {
-            if(str.charAt(i)=='x') {
-                indexX=i;
+        int indexX = 0, indexY = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == 'x') {
+                indexX = i;
             }
-            if(str.charAt(i)=='y') {
-                indexY=i;
+            if (str.charAt(i) == 'y') {
+                indexY = i;
             }
         }
-        return indexY>indexX;
+        return indexY > indexX;
     }
 }

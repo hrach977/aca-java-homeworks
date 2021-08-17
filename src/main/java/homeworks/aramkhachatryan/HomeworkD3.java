@@ -13,9 +13,10 @@ public class HomeworkD3 {
         String str = input.next();
         System.out.println(first3chars(str));
     }
+
     public static String first3chars(String inpstring) {
-        if (inpstring.length()%2==0) {
-            inpstring = inpstring.substring(0, inpstring.length()/2);
+        if (inpstring.length() % 2 == 0) {
+            inpstring = inpstring.substring(0, inpstring.length() / 2);
         } else {
             inpstring = "Length of the string you entered is not even";
         }

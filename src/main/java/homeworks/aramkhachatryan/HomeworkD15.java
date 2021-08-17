@@ -24,7 +24,7 @@ public class HomeworkD15 {
 
     public static String rotat(String str) {
         String first2chars = str.substring(0, 2);
-        str = str.substring(2, str.length());
+        str = str.substring(2);
         str = str + first2chars;
         return str;
     }

@@ -17,9 +17,10 @@ public class HomeworkD2 {
         System.out.print(quotmarks(name));
 
     }
+
     public static String quotmarks(String name) {
         String quotmarks = "<<>>";
-        name = quotmarks.substring(0,2)+name+quotmarks.substring(2,4);
+        name = quotmarks.substring(0, 2) + name + quotmarks.substring(2, 4);
         return name;
     }
 }

@@ -16,8 +16,8 @@ public class HomeworkD10 {
 
     public static String repeat(String str) {
         String result;
-        result = str.substring(0,2);
-        result = result+result+result;
+        result = str.substring(0, 2);
+        result = result + result + result;
         return result;
     }
 }

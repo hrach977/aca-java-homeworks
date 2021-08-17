@@ -13,7 +13,8 @@ public class HomeworkD1 {
         String name = input.next();
         nameMethod(name);
     }
+
     public static void nameMethod(String name) {
-        System.out.print("Hello " + name +"!");
+        System.out.print("Hello " + name + "!");
     }
 }

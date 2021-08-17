@@ -26,8 +26,8 @@ public class HomeworkD11 {
 
     public static String match(String str, String word) {
         String checkS = str.substring(1, word.length());
-        String checkW = word.substring(1, word.length());
-        if (checkS.equals(checkW)){
+        String checkW = word.substring(1);
+        if (checkS.equals(checkW)) {
             return str.substring(0, word.length());
         } else {
             return "";

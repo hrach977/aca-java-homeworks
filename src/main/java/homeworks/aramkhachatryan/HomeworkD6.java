@@ -11,6 +11,7 @@ public class HomeworkD6 {
         String inpStr = input.next();
         System.out.print(retbool(inpStr));
     }
+
     public static boolean retbool(String inpStr) {
         return inpStr.endsWith("ly");
     }
