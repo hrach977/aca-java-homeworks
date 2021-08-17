@@ -11,15 +11,14 @@ public class Exercise22 {
     }
 
     public static boolean isXYBalanced(String str){
-        boolean flag = true;
-        for(int i = 0; i < str.length(); i++){
-            if(str.charAt(i) == 'y'){
-                flag = true;
-            }
-            if(str.charAt(i) == 'x'){
-                flag = false;
-            }
+        if(!str.contains("x")){
+            return true;
         }
-        return flag;
+        int idx = str.lastIndexOf('y');
+        if(idx==-1){
+            return false;
+        }
+        int idy = str.lastIndexOf('x');
+        return idx > idy;
     }
 }
