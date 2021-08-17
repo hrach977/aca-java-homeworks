@@ -9,9 +9,8 @@ public class Exercise17 {
 
     public static String doubleChars(String str){
         StringBuilder result = new StringBuilder();
-        for(int i = 0; i < str.length(); i++){
-            result.append(str.charAt(i));
-            result.append(str.charAt(i));
+        for (char ch : str.toCharArray()){
+            result.append(ch).append(ch);
         }
         return result.toString();
     }
