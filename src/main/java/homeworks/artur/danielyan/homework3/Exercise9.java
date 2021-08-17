@@ -10,10 +10,10 @@ public class Exercise9 {
     public static String isRedOrBlue(String str){
         if(str.startsWith("red")){
             return "red";
-        }else if(str.startsWith("blue")){
-            return "blue";
-        }else{
-            return "";
         }
+        if(str.startsWith("blue")){
+            return "blue";
+        }
+        return "";
     }
 }
