@@ -13,14 +13,21 @@ public class Ex20 {
 
     public static int occurances(String str){
         int counter = 0;
-        for(int i = 0;i<str.length()-1;i++){
-            if (str.charAt(i) == 'h'){
-                if (str.charAt(i+1) == 'i'){
-                    counter++;
-                }
-
+//        for(int i = 0;i<str.length()-1;i++){
+//            if (str.charAt(i) == 'h'){
+//                if (str.charAt(i+1) == 'i'){
+//                    counter++;
+//                }
+//
+//            }
+//        }
+        for(int i = 0; i< str.length()-1;i++) {
+            if(str.startsWith("hi", i)){
+                counter++;
+                i++;
             }
         }
+
         return counter;
     }
 }
