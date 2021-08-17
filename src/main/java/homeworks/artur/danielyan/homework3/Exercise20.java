@@ -14,6 +14,7 @@ public class Exercise20 {
         for(int i = 0; i <= str.length()-2; i++){
             if(str.startsWith("hi",i)){
                 count++;
+                i++
             }
         }
         return count;
