@@ -11,19 +11,27 @@ public class Exercise19 {
     }
 
     public static boolean starChar(String str){
-        int length = str.length();
-        boolean areTheSame = true;
-        for (int i = 0; i < length; i++) {
-            String tmpString = str.substring(i,i+1);
-            if (tmpString.equals("*") && i > 0 && i < length-1) {
-                if (str.charAt(i-1) == str.charAt(i+1))
-                areTheSame = true;
-                else
-                areTheSame = false;
+//        int length = str.length();
+//        boolean areTheSame = true;
+//        for (int i = 0; i < length; i++) {
+//            String tmpString = str.substring(i,i+1);
+//            if (tmpString.equals("*") && i > 0 && i < length-1) {
+//                if (str.charAt(i-1) == str.charAt(i+1))
+//                areTheSame = true;
+//                else
+//                areTheSame = false;
+//            }
+//        }
+//        return areTheSame;
+
+        for(int i=1; i<str.length()-1; i++){
+            if(str.charAt(i)=='*'){
+                if(str.charAt(i-1)!=str.charAt(i+1)){
+                    return false;
+                }
             }
         }
-        return areTheSame;
-
+            return true;
     }
 
 }
