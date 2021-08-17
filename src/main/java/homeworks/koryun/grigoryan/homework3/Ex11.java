@@ -6,6 +6,7 @@ public class Ex11 {
         System.out.println(generateString("hippo", "xip"));
         System.out.println(generateString("hippo", "him"));
         System.out.println(generateString("hi", "him"));
+        System.out.println(generateString("hippo", "hip"));
 
     }
     public static String generateString(String str, String word){

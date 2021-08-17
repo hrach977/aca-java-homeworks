@@ -6,14 +6,9 @@ public class Ex19 {
         System.out.println(charsEqual("*a"));
         System.out.println(charsEqual("a*"));
         System.out.println(charsEqual("a*a"));
+        System.out.println(charsEqual("aaaa"));
     }
     public static boolean charsEqual(String str){
-        if(str.length() < 3){
-            return false;
-        }
-        if(str.charAt(0) == '*' || str.charAt(str.length()-1) == '*'){
-            return false;
-        }
         for(int i = 1; i < str.length()-1;i++){
             if(str.charAt(i) == '*'){
                 if(str.charAt(i-1) != str.charAt(i+1)){
