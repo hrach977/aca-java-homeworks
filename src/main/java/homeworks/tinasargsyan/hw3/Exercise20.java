@@ -4,21 +4,19 @@ Return the number of times that the string "hi" appears anywhere in the given st
  */
 public class Exercise20 {
     public static void main(String[] args) {
-        System.out.println(numberOfTimes("hihi"));
-        System.out.println(numberOfTimes("sayhi"));
-        System.out.println(numberOfTimes("i"));
+          System.out.println(numberOfTimes("hihi"));
+          System.out.println(numberOfTimes("sayhi"));
+          System.out.println(numberOfTimes("i"));
     }
 
     public static int numberOfTimes(String str){
-        int count =0;
-        if (str.length() ==1 && str.charAt(0) == 'h') {
-            count = 0;
-        } else{
-            for(int i = 0;i<str.length();i++) {
-                if ( (str.charAt(i) == 'h') && (str.charAt(i+1) == 'i') )
-                count+=1;
+        int count = 0;
+        for (int i=0; i<str.length()-1; i++) {
+            if (str.startsWith("hi", i)) {
+                count++;
+                i++;
             }
         }
         return count;
-    }
+ }
 }
