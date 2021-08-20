@@ -1,9 +1,14 @@
 package homeworks.artur.danielyan.homework4;
 
-public class Vehicle {
+public class Vehicle implements IVehicle{
     int price;
     int sittingPlaces;
-    int fuelVolume;
-    int currentFuelVolume;
-    boolean direction; //true is forward
+
+    int getPrice(){
+        return price;
+    }
+
+    int getSittingPlaces(){
+        return sittingPlaces;
+    }
 }
