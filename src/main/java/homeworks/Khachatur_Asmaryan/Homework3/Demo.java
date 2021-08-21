@@ -6,10 +6,8 @@ public class Demo {
         public static void main(String[] args) {
             Scanner input = new Scanner(System.in);
             System.out.println("please enter word");
-            String word1 = input.nextLine();
-            System.out.println("please enter front");
-            boolean front = input.nextBoolean();
-            String result = Exercise5.makeOutik(word1, front);
+            String str = input.nextLine();
+            String result = Exercise16.makeword(str);
             System.out.println(result);
     }
 }

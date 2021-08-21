@@ -3,14 +3,9 @@ package homeworks.Khachatur_Asmaryan.Homework3;
 import java.util.Scanner;
 
 public class Exercise8 {
-    public static void main(String[] args) {
-        
+    public static String makeword(String a, String b) {
+        char first = a.length()>0 ? a.charAt(0) : '@';
+        char second = b.length()>0 ? b.charAt(b.length()-1) : '@';
+        return first + "" + second;
     }
-    public String theEnd(String str, boolean front) {
-        if (front){
-        return str.substring(0,1);}
-  else{
-        return str.substring(str.length()-1);}
-    }
-
 }
