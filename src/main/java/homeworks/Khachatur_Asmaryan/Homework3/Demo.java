@@ -7,7 +7,7 @@ public class Demo {
             Scanner input = new Scanner(System.in);
             System.out.println("please enter word");
             String str = input.nextLine();
-            String result = Exercise16.makeword(str);
+            String result = Exercise17.doubleChar(str);
             System.out.println(result);
     }
 }
