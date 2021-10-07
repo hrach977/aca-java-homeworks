@@ -1,0 +1,249 @@
+import java.util.Scanner;
+public class Homework2 {
+	public static void main(String[] args) {
+		
+		//Exercise 1 
+		//Take a number from input between 1-7. Output the corresponding day of week.
+		Scanner in = new Scanner(System.in);
+		System.out.println("Please enter the number between 1-7. ");
+		int dayOfWeek = in.nextInt();
+		if(dayOfWeek == 1){
+			System.out.println("Monday");
+		}else if(dayOfWeek == 2){
+			System.out.println("Tuesday");
+		}else if(dayOfWeek == 3){
+			System.out.println("Wednesday");
+		}else if(dayOfWeek == 4){
+			System.out.println("Thursday");
+		}else if(dayOfWeek == 5){
+			System.out.println("Friday");
+		}else if(dayOfWeek == 6){
+			System.out.println("Saturday");
+		}else if(dayOfWeek == 7){
+			System.out.println("Sunday");
+		}else{
+			System.out.println("Invalid day range");
+		}
+		
+		
+		//Exercise 2
+		//Solve exercise1 using switch statement.
+		System.out.println("Please enter the number between 1-7. ");
+		int numberForDay = in.nextInt();
+		switch(numberForDay){
+		case 1:
+			System.out.println("Monday");
+			break;
+		case 2:
+			System.out.println("Tuesday");
+			break;
+		case 3:
+			System.out.println("Wednesday");
+			break;
+		case 4:
+			System.out.println("Thursday");
+			break;	
+		case 5:
+			System.out.println("Friday");
+			break;
+		case 6:
+			System.out.println("Saturday");
+			break;	
+		case 7:
+			System.out.println("Sunday");
+			break;	
+		default:
+			System.out.println("Invalid day range");
+		}
+		
+		//Exercise 3
+		//Take two floating point numbers from input.
+		//Check whether they are the same up to three decimal places.
+		System.out.println("Please enter the first floating  number");
+		double firstNumber = in.nextDouble();
+		System.out.println("Please enter the second floating number");
+		double secondNumber = in.nextDouble();
+		long forIntegerFirstNumber =(long) firstNumber;
+		firstNumber = Math.ceil( (firstNumber - forIntegerFirstNumber)*1000);
+		long forIntegerSecondNumber =(long) secondNumber;
+		secondNumber = Math.ceil( (secondNumber - forIntegerSecondNumber)*1000);
+			System.out.println(firstNumber + " " + secondNumber);
+		if(firstNumber == secondNumber){
+			System.out.println("They are the same up to three decimal places");
+		}else{
+			System.out.println("They are different");
+		}
+		
+		//Exercise 3_2
+		System.out.println("Please enter the first floating number");
+		double numberOne = in.nextDouble();
+		System.out.println("Please enter the second floating number");
+		double numberTwo = in.nextDouble();
+		numberOne = numberOne * 1000;
+		long itIsForNumberOne = (long) numberOne;
+		itIsForNumberOne = itIsForNumberOne % 1000;
+		numberTwo = numberTwo * 1000;
+		long itIsForNumberTwo = (long) numberTwo;
+		itIsForNumberTwo = itIsForNumberTwo % 1000;
+		System.out.println( itIsForNumberTwo + " " +itIsForNumberOne);
+		if(itIsForNumberOne == itIsForNumberTwo){
+			System.out.println("They are the same up to three decimal places");
+		}else{
+			System.out.println("They are different");
+		}
+		
+		//Exercise 4
+		//Prompt user to input a single character. 
+		//Print Vowel or Consonant, depending on the user input.
+		//If the user input is not a letter (between a and z or A and Z),
+		//or is a string of length > 1, print and error message.
+		//I have a problem with scanner there. I will ask you Tuesday
+		Scanner imput = new Scanner(System.in);
+		  System.out.println("Enter the letter");
+		  String letter = imput.nextLine();
+		  letter = letter.toLowerCase();
+		  int lengthOfVariable = letter.length();
+		  if(lengthOfVariable == 1){
+			  char firstSymbol = letter.charAt(0);
+			  boolean checkTheSymbol = Character.isLetter(firstSymbol);
+			  if(checkTheSymbol){
+				  if(firstSymbol == 'a' || firstSymbol == 'e' || firstSymbol == 'i' ||
+					  firstSymbol == 'o' || firstSymbol == 'u' || firstSymbol == 'y' ){
+				  System.out.println("The letter is vowel");
+				  }else{
+					  System.out.println("The letter is consonant");
+				  }
+			  }else{
+				  System.out.println("Error: Not a letter");
+			  }
+			  
+		  }else{
+			  System.out.println("Error. Not a single symbol");
+		  }
+		  		  
+		  
+		  	
+		//Exercise 5
+		//Take a year from input. Output whether that year is a leap year or not.
+		System.out.println("Enter the year please, for to check it leap or not ");
+		int yearForCheck = in.nextInt();
+		if(yearForCheck >= 1582){
+			if(( yearForCheck % 4  == 0) && (yearForCheck % 100 != 0)){
+				System.out.println("That year is a leap year");
+			}else if(yearForCheck % 400 == 0){
+				System.out.println("That year is a leap year");
+			}else{
+				System.out.println("That year is not a  leap year");
+			}
+			
+
+		}else{
+			System.out.println(" The Gregorian calendar was founded since 1582 year ");
+		}
+		
+		
+		//Exercise 6
+		//Take two integers from input between 25 and 75.
+		//Output true if there’s a common digit in both numbers.
+		
+		System.out.println("Enter the 2 numbers between 25 and 75");
+		int firstInteger = in.nextInt();
+		int secondInteger = in.nextInt();
+		int numA, numB, numC, numD;
+		numA = firstInteger / 10;
+		numB = firstInteger % 10;
+		numC = secondInteger / 10;
+		numD = secondInteger % 10;
+		if(numA == numC || numA == numD || numB == numC || numB == numD){
+			System.out.println("true");
+		}else{
+			System.out.println("false");
+		}
+		
+		//Exercise 7
+		//Take two numbers from input. Output true if one of them is 10 or if their sum is 10
+		System.out.println("Enter 2 numbers please one of them must be  10 or sum of tham must be 10");
+		int myFirstNumber = in.nextInt();
+		int mySecondNumber = in.nextInt();
+		if((myFirstNumber == 10 || mySecondNumber == 10) || (myFirstNumber + mySecondNumber == 10)){
+			System.out.println("True");
+			
+		}else{
+			System.out.println("False");
+		}
+		
+		//Exercise 8
+		//Take two integers from input. Output true if either of them is in the range 10..20 inclusive
+		System.out.println("Enter the 2 numbers please one of them must be from 10 to 20 ");
+		int numberInOne = in.nextInt();
+		int numberInTwo = in.nextInt();
+		if((numberInOne > 10 && numberInOne <= 20) || (numberInTwo > 10 && numberInTwo <= 20)){
+			System.out.println("True");
+		}else{
+			System.out.println("False");
+		}
+		
+		//Exercise 9
+		//Take two Booleans from input, which represent whether two monkeys smile or not. 
+		//We are in trouble if they are both smiling or if neither of them is smiling. Output true if we are in trouble.
+		System.out.println("Enter true or false two time");
+		boolean firstBool = in.nextBoolean();
+		boolean secondBool = in.nextBoolean();
+		if(firstBool == secondBool){
+			System.out.println("True");
+		}else{
+			System.out.println("False");
+		}
+		
+		//Exercise 10
+		//Take a string from input representing a month and a number representing the year.
+		//Output the number of days in that month.
+		//I have problem here, too
+		System.out.println("Please enter the month");
+		String monthFromUser = imput.nextLine();
+		System.out.println("Enther the year please");
+		int yearFromUser = imput.nextInt();
+		boolean checkTheLeap = false;
+		boolean checknotLapYear = false;
+		if((yearFromUser % 4 == 0) && (yearFromUser % 100 != 0)){
+			checkTheLeap = true;
+		}else if(yearFromUser % 400 == 0){
+			checkTheLeap = true;
+		}else{
+			checknotLapYear = true;
+		}	
+		monthFromUser = monthFromUser.toLowerCase();
+		if(monthFromUser.equals("january")){
+			System.out.println(31);
+		}else if(monthFromUser.equals("february") && checknotLapYear ){
+			System.out.println(28);
+		}else if(monthFromUser.equals("february") && checkTheLeap ){
+			System.out.println(29);
+		}else if(monthFromUser.equals("march")){
+			System.out.println(31);
+		}else if(monthFromUser.equals("april")){
+			System.out.println(30);
+		}else if(monthFromUser.equals("may")){
+			System.out.println(31);
+		}else if(monthFromUser.equals("june")){
+			System.out.println(30);
+		}else if(monthFromUser.equals("july")){
+			System.out.println(31);
+		}else if(monthFromUser.equals("august")){
+			System.out.println(31);
+		}else if(monthFromUser.equals("september")){
+			System.out.println(30);
+		}else if(monthFromUser.equals("october")){
+			System.out.println(31);
+		}else if(monthFromUser.equals("november")){
+			System.out.println(30);
+		}else if(monthFromUser.equals("dectember")){
+			System.out.println(31);
+		}else{
+			System.out.println("there is not month like " + monthFromUser );
+		}
+			
+		
+	}
+
+}

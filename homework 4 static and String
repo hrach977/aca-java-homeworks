@@ -1,0 +1,458 @@
+
+public class StaticMathod {
+	
+
+	public static void main(String[] args) {
+		//Exercise 1
+		String greeting = greeting("Bob");
+		System.out.println(greeting);
+		
+		//Exercise 2
+		worldInMiddle("Wold");
+		
+		//Exercise 3
+		returnFirstPart();
+		
+		//Exercise 4
+		twoWord("Aragats", "Ararat");
+		
+		//Exercise 5
+		reversOrNot("abcd",false);
+		
+		//Exercise 6
+		trueOrFalse("fly");
+		
+		//Exercise 7
+		printMiddleFree("Candy");
+		
+		//Exercise 8
+		firstAndLastChar("abcdefg", "abcdefg");
+		
+		//Exercise 9
+		redOrBlue("luejhsdihhg");
+		
+		//Exercise 10
+		System.out.println(threeStep("a"));
+		
+		//Exercise 11
+		returnTheParOfWord("hippo", "xip");
+		
+		//Exercise 12
+		abba("hi", "bye");
+		
+		//Exercise 13
+		writeLastTwoLetters("Ararat");
+		
+		//Exercise 14
+		writeMiddleLetters("AAraratT");
+		
+		//Exercise 15
+		firstTwoLetterToEnd("abcdefg");
+		
+		//Exercise 16
+		System.out.println(writeWordWithoutFirstAndLastWord("BoooB"));
+		
+		//Exercise 17
+		
+		
+		
+		//Exercise 18
+		writeLettersNTime("abcd",2);
+		
+		
+		//Exercise 19
+		writeTrueOrFale("a*abcd*d");
+		
+		//Exercise 20
+		howMuchPartWeSeeHi("hi today is white party day, you should wear a white dress");
+		
+		//Exercise 21
+		firstStringLookLikeEndOfSecondString("dzmeruk", "amenadzmeruk");
+		
+		//Exercise 22
+		xyBalanced("alabalanixyhfhdj  y jdxyxhdxxyxyhghfg");
+		
+		//Exercise 23
+		dogAndCat("dog and cat are siting in horse dog cat love cat dog dog cat");
+		
+	}
+	
+	
+	
+	
+	//Exercise 1
+	//Write a method that takes a name e.g. “Bob”, and returns a 
+	//greeting of the form “Hello Bob!”
+	public static String greeting(String name){
+		String grt = "Hello";
+		String tab = " ";
+		return grt + tab + name;
+	
+	
+	}
+	//Exercise 2
+	//Given an out string length4, e.g. “<<>>” and a word, return a new string
+	//where the word is in the middle of the outstring, e.g. “<<word>>”.
+	public static void worldInMiddle(String worldFromUser){
+		String hooks = "<<>>";
+		String firstPart = hooks.substring(0,2);
+		String secondPart = hooks.substring(2,4);
+		System.out.println(firstPart + " " + worldFromUser + " " + secondPart );
+	}
+	
+	//Exercise 3
+	//Given a string of even length, return the first half of the string.
+	//So the string “WooHoo”yields “Woo”
+	
+	public static void returnFirstPart(){
+		String evenStr = "WooHoo";
+		int fiftyprocents = evenStr.length()/2;
+		String abc = evenStr.substring(0,fiftyprocents);
+		System.out.println(abc);
+	}
+	
+	//Exercise 4
+	//Given 2 strings, return their concatenation, except omit 
+	//the first char of each. The strings will be at least length 1.
+	public static void twoWord(String first, String second){
+		if(first.length() < 1 || second.length() < 1){
+			System.out.println("The word must be longer");
+			return;
+		}
+		String firstWord = first.substring(1,first.length());
+		String secondWord = first.substring(1,second.length());
+		System.out.println(firstWord + secondWord);
+	}
+	
+	//Exercise 5;
+	//Given a string, and a Boolean parameter front, return a string length
+	//1 from its front, unless frontis false, in which case return a string
+	//length 1 from its back. The string will be non-empty
+	public static void reversOrNot(String fromUser, boolean front){
+		if(front){
+			System.out.println(fromUser);
+			return;
+		}
+		String forRevers = "";
+		int number = fromUser.length()-1;
+		//int forChar = 0;
+		while(number >= 0){
+			forRevers += fromUser.charAt(number);
+			number--;
+		}
+		System.out.println(forRevers);
+	}
+	
+	
+	
+	
+	//Exercise 6
+	//Given a string, return true if it ends in “ly”
+	public static void trueOrFalse( String fromUser){
+		String lastTwoLetter = fromUser.substring((fromUser.length()-2),fromUser.length());
+		if(lastTwoLetter.equals("ly")){
+			
+			System.out.println(true);
+			return;
+		}
+		System.out.println(false);
+	}
+	
+	
+	//Exercise 7
+	//Given a string of odd length, return the string length 3 from its middle. 
+	//So “Candy”yields “and”. The string length will be at least 3.
+	
+	public static void printMiddleFree(String oddword){
+		if(oddword.length() % 2 == 0 || oddword.length() == 0){
+			System.out.println("The sum of this word's letters is not odd");
+			return;		
+		}
+		int forFirstPart = ((oddword.length() - 3) / 2);
+		int forLastPart = oddword.length() - forFirstPart;
+		String theWordForPrint = oddword.substring(forFirstPart,forLastPart);
+		System.out.println(theWordForPrint);
+		
+	}
+	
+	//Exercise 8
+	//Given 2 string a and b, return a new string made of the first char of aand the last char of b.
+	//So, “yo”and “java”yields “ya”. If either string is length 0, use ‘@’for its missing char.
+	public static void firstAndLastChar(String ForFirastChar, String ForSecondChar){
+		char firsLetter;
+		if(ForFirastChar.length() == 0){
+			firsLetter = '@';
+		}else{
+		 firsLetter = ForFirastChar.charAt(0);
+		}
+		char lastLetter;
+		if(ForSecondChar.length() == 0){
+			lastLetter = '@';
+		}else{
+			lastLetter = ForSecondChar.charAt(ForSecondChar.length()-1);
+		}
+		
+		System.out.println(firsLetter + "" + lastLetter);
+		
+	}
+	//Exercise 9
+	//Given a string, if the string begins with “red”or “blue”return that color string,
+	//otherwise return the empty string.
+	
+	public static void redOrBlue(String color){
+		String colorRed = color.substring(0,3);
+		String colorblue = color.substring(0,4);
+		if(colorRed.equals("red")){
+			System.out.println("RED");
+			return;
+		}
+		if(colorblue.equals("blue")){
+			System.out.println("BLUE");
+			return;
+		}
+		System.out.println("");
+	}
+	
+	//Exercise 10
+	//Given a string, return a new string made of 3 copies of the first 2 chars of the original string.
+	//The string may be any length. If there are fewer than 2 chars, use whatever is there.
+	
+	public static String threeStep(String anyWord){
+		String forfirstTwoletter;
+		if(anyWord.length() >= 2){
+			forfirstTwoletter = anyWord.substring(0,2);
+			forfirstTwoletter = forfirstTwoletter + forfirstTwoletter + forfirstTwoletter;
+			return forfirstTwoletter;
+		}
+		forfirstTwoletter = anyWord.substring(0);
+		forfirstTwoletter = forfirstTwoletter + forfirstTwoletter + forfirstTwoletter;
+		return forfirstTwoletter;
+	}
+	
+	
+	
+	
+	//Exercise 11
+	//Given a string and asecond "word" string, we'll say that the word matches the stringif it
+	//appears at the front of the string,except its first char does not need to match exactly.
+	//On amatch, return the front of the string, or otherwise return the empty string.
+	//So, with the string "hippo" the word "hi" returns "hi"// and "xip" returns "hip".
+	//The word will be at least length 1.
+	public static void returnTheParOfWord(String fromUser, String forCheck){
+		if(fromUser.length() < 1 || forCheck.length() < 1){
+			System.out.println("The word should be longer than one letter");
+			return;
+		}
+		String checker = fromUser.substring(1,forCheck.length());
+		String checkerSecond = forCheck.substring(1,forCheck.length());
+		if(checker.equalsIgnoreCase(checkerSecond)){
+			System.out.println(fromUser.substring(0,forCheck.length()));
+			return;
+		}
+		System.out.println("The empty string)))");
+		
+	}
+	
+	
+	
+	
+	
+	//Exercise 12
+	//Given two strings, a and b, return the result of putting them together in the order abba, e.g.
+	//"Hi" and "Bye" returns "HiByeByeHi".
+	
+	public static void abba(String a, String b){
+		String allwords = a + b + b + a;
+		System.out.println(allwords);
+		
+	}
+	
+	
+	//Exercise 13
+	//Given a string, return a new string made of 3 copies of the last 2 chars of the original string. 
+	//The string length will be at least 2.
+	
+	public static void writeLastTwoLetters(String fromUser){
+		if(fromUser.length() <= 2){
+			System.out.println("The word should be longer");
+			return;
+		}
+		String lastTwoLetterthreeTime = fromUser.substring((fromUser.length()-2),fromUser.length());
+		lastTwoLetterthreeTime = lastTwoLetterthreeTime + lastTwoLetterthreeTime + lastTwoLetterthreeTime;
+		System.out.println(lastTwoLetterthreeTime);
+	}
+	
+	//Exercise 14
+	//Given a string, return a version without the first and last char, so "Hello" yields "ell".
+	//The string length will be at least 2.
+	public static void writeMiddleLetters(String fromUser){
+		if(fromUser.length() <= 2){
+			System.out.println("The word should be longer");
+			return;
+		}
+		String middelPartOfWord = fromUser.substring(1, (fromUser.length()-1) );
+		System.out.println(middelPartOfWord);
+	}
+	
+	//Exercise 15
+	//Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end.
+	//The string length will be at least 2.
+	public static void firstTwoLetterToEnd(String fromUser){
+		if(fromUser.length() <= 2){
+			System.out.println("The word should be longer");
+			return;
+		}
+		String newWord = fromUser.substring(2,fromUser.length()) + fromUser.substring(0,2);
+		System.out.println(newWord);
+	}
+	
+	//Exercise 16
+	//Given a string, return a version without both the first and last char of the string.
+	//The string may be any length, including 0..
+	
+	public static String writeWordWithoutFirstAndLastWord(String fromUser){
+		if (fromUser.length() <=2){
+			fromUser = "";
+			return fromUser;
+		}
+		fromUser = fromUser.substring(1, (fromUser.length()-1) );
+		return fromUser;
+	}
+	
+	//Exercise 17
+	//Given a string, return a string where for every char in the original, there are two chars.
+	
+	
+	
+	//Exercise 18
+	//Given a string and an int n, return a string made of n repetitions of the last n characters of the string.
+	//You may assume that n is between 0 and the length of the string, inclusive.
+	
+	public static void  writeLettersNTime(String fromUser, int n){
+		if(n <= 0 || n > fromUser.length()){
+			System.out.println("The integer cannot be bigger than the letters in word and cannot be zero or negative");
+			return;
+		}
+		fromUser = fromUser.substring((fromUser.length()-n),fromUser.length());
+		String forPrint = "";
+		for(int i = 0; i < n; i++){
+			forPrint += fromUser;
+		}
+		System.out.println(forPrint);
+	}
+	
+	//Exercise 19
+	//Write a method that returns true if for every '*' (star) in the string, 
+	//if there are chars both immediately before and after the star, they are the same.
+	
+	public static void writeTrueOrFale(String fromUser){
+		char forLeftLetter;
+		char forRigthLetter;
+		char star;
+		boolean thereIsOrNotStar = true;
+		for(int i = 0; i < fromUser.length(); i++){
+			star = fromUser.charAt(i);
+			if(star == '*'){
+				thereIsOrNotStar = false;
+				if(i-1 < 0){
+					System.out.println("There is no letter from left");
+					return;
+				}
+				if(i+1 == fromUser.length()){
+					System.out.println("There is no letter from right");
+					return;
+				}
+				forLeftLetter = fromUser.charAt(i-1);
+				forRigthLetter = fromUser.charAt(i+1);
+				if(forLeftLetter != forRigthLetter){
+					System.out.println(false);
+					return;
+				}
+			}
+		}
+		if(thereIsOrNotStar){
+			System.out.println("There is not * symbol");
+			return;
+		}
+		System.out.println(true);
+	}
+	
+	
+	// Exercise 20
+	//Return the number of times that the string "hi" appears anywhere in the given string.
+	public static void howMuchPartWeSeeHi(String fromUser){
+		char forFirstLetter;
+		char forSecondLetter;
+		int register = 0;
+		for(int i = 0; i < fromUser.length(); i++){
+			if(i == (fromUser.length() - 1) ){
+				break;
+			}
+			forFirstLetter = fromUser.charAt(i);
+			forSecondLetter = fromUser.charAt(i+1);
+				if(forFirstLetter == 'h' && forSecondLetter == 'i' ){
+					register++;
+				}
+			}
+		System.out.println("The hi was meeting " + register + " time" );
+		}
+	
+	//Exercise 21
+	//Given two strings, return true if either of the strings appears at the very end of the other string, 
+	//ignoring upper/lower case differences (in other words, the computation should not be "case sensitive").
+	
+	public static void firstStringLookLikeEndOfSecondString(String firstFromUser, String secondFromUser){
+		int numberForLetter = firstFromUser.length();
+		String checker = secondFromUser.substring((secondFromUser.length() - numberForLetter),secondFromUser.length());
+		if(checker.equalsIgnoreCase(firstFromUser)){
+			System.out.println(true);
+			return;
+		}
+		System.out.println(false);	
+	}
+	
+	//Exercise 22
+	//We'll say that a String is xy-balanced if for all the 'x' chars in the string, there exists a
+	//'y' char somewhere later in the string. So "xxy" is balanced, but "xyx" is not.
+	//One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced.
+	
+	public static void xyBalanced(String fromUser){
+		char letterForCheck;
+		boolean checker = false;
+		for(int i = 0; i < fromUser.length(); i++){
+			letterForCheck = fromUser.charAt(i);
+			if(letterForCheck == 'x'){
+				checker = false;
+			}
+			if(letterForCheck == 'y'){
+				checker = true;
+			}
+		}
+		System.out.println(checker);
+	}
+	
+	//Exercise 23
+	//Return true if the string "cat" and "dog" appear the same number of times in the given string
+	public static void dogAndCat(String fromUser){
+		int dogCount = 0;
+		int catCount = 0;
+		String dogOrCat;
+		for(int i = 0; i < fromUser.length(); i++){
+			if(i == (fromUser.length()-2)){	
+				break;
+			}
+			dogOrCat = fromUser.substring(i,(i+3));
+			if(dogOrCat.equalsIgnoreCase("dog")){
+				dogCount++;
+			}
+			if(dogOrCat.equalsIgnoreCase("cat")){
+				catCount++;
+			}
+		}
+		if(dogCount == catCount){
+			System.out.println(true);
+			return;
+		}
+		System.out.println(false);
+	}
+}
